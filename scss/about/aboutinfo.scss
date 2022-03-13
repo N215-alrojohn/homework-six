@@ -1,0 +1,140 @@
+.aboutinfocontainer {
+    max-width: $site-width;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    hr {
+        width: 171px;
+        height: 2px;
+        border-width: 0;
+        background-color:black;
+    }
+
+    .abouttitle {
+        font-family: ProximaNovaThin;
+        font-size: 60px;
+        margin: 0;
+    }
+
+    .aboutinfo {
+        font-family: GillSans;
+        font-size: 16px;
+        margin-top: 37px;
+    }
+}
+
+.clientquotessectioncontainer {
+    max-width: $site-width;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 179px;
+
+    hr {
+        width: 171px;
+        height: 2px;
+        border-width: 0;
+        background-color:black;
+    }
+
+    .clientquotestitle {
+        font-family: ProximaNovaThin;
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .clientquotecontainer {
+        margin-top: 37px;
+        max-width: 667px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        .clientname {
+            font-family: ProximaNovaThin;
+            font-size: 20px;
+            color: $site-blue;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .clientimage1 {
+            height: 150px;
+            width: 260px;
+            background-image: url(../images/about-client-01.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .clientimage2 {
+            height: 150px;
+            width: 260px;
+            background-image: url(../images/about-client-02.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .clientquotetext {
+            max-width: 385px;
+            font-family: GillSansItalic;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .aboutinfocontainer {
+        max-width: 75%;
+        margin: 0 auto;
+        margin-top: 100px;
+    
+        hr {
+            width: 171px;
+            height: 2px;
+            border-width: 0;
+            background-color:black;
+        }
+    
+        .abouttitle {
+            font-family: ProximaNovaThin;
+            font-size: 60px;
+            margin: 0;
+        }
+    
+        .aboutinfo {
+            font-family: GillSans;
+            font-size: 16px;
+            margin-top: 37px;
+        }
+    }
+
+    .clientquotessectioncontainer {
+        max-width: 75%;
+        margin: 0 auto;
+        margin-top: 100px;
+    
+        .clientquotecontainer {
+            margin-top: 37px;
+            max-width: 667px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            .clientname {
+                font-family: ProximaNovaThin;
+                font-size: 20px;
+                color: $site-blue;
+                position: relative;
+                margin: 15px;
+            }
+        }
+
+        .clientquotetext {
+            margin-top: 20px;
+            max-width: 385px;
+            font-family: GillSansItalic;
+        }
+    }
+}

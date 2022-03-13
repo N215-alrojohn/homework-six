@@ -1,0 +1,126 @@
+.tourpageheader {
+    max-width: $site-width;
+    min-height: 413px;
+    margin: 0 auto;
+    margin-top: 48px;
+    position: relative;
+    //background styling
+    background-color: (rgba($site-black,0.5));
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .title {
+        //position
+        padding: 30px;
+        //styling
+        font-family: ProximaNovaThin;
+        font-size: 80px;
+        color: $site-white;
+    }
+
+    .test {
+        //position
+        margin-bottom: 0;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        //styling
+        font-family: ProximaNovaThin;
+        font-size: 30px;
+        color: $site-white;
+    }
+}
+
+.tour-images-container {
+    max-width: $site-width;
+    min-height: 347px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 40px;
+    
+    .tour-preview-image {
+        height: 347px;
+        width: 298px;
+        background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;;
+    }
+}
+
+.textcontainer {
+    max-width: $site-width;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 58px;
+
+    .tour-info-title {
+        font-family: ProximaNovaThin;
+        font-size: 60px;
+        letter-spacing: 8px;
+    }
+
+    .tour-info-text {
+        font-family: Gillsans;
+        font-size: 16px;
+    }
+
+    hr {
+        width: 171px;
+        height: 2px;
+        border-width: 0;
+        background-color:black;
+        margin-bottom: 37px;
+        margin-top: -20px;
+    }
+}
+
+.tour-booking-button {
+ margin: 0 auto;
+height: 40px;
+width: 133px;
+border-radius: 20px;
+background-color: $site-blue;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 59px;
+cursor: pointer;
+
+ p {
+    margin: 0 auto;
+    color: $site-white;
+    font-family: gillsans;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .tour-images-container {
+        width: 90%;
+        height: 347px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+
+        .tour-preview-image {
+            height: 260px;
+            width: 223px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;;
+        }
+    }
+
+    .textcontainer {
+        max-width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 58px;
+ }
+
+}

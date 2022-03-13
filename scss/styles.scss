@@ -1,0 +1,23 @@
+//basic
+@import "structure.scss";
+@import "variables.scss";
+@import "fonts.scss";
+
+//home
+@import "home/banner.scss";
+@import "home/form-content.scss";
+@import "home/preview-pictures.scss";
+
+//footer
+@import "footer.scss";
+
+//nav
+@import "nav/blacknav.scss";
+@import "nav/nav.scss";
+
+//about
+@import "about/aboutinfo.scss";
+
+//tours
+@import "tours/tours.scss";
+@import "tours/tourpage.scss";
